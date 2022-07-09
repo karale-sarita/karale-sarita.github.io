@@ -5,6 +5,36 @@
 	let message = '';
 </script>
 
+<svelte:head>
+	<!-- Primary Meta Tags -->
+	<title>Sarita Karale | Portfolio</title>
+	<meta name="title" content="Sarita Karale | Portfolio" />
+	<meta
+		name="description"
+		content="Sarita karale is a frontend developer working with angular, ReactJS and Ionic to build awesome enterprise grade web apps."
+	/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://sarita.vercel.app/" />
+	<meta property="og:title" content="Sarita Karale | Portfolio" />
+	<meta
+		property="og:description"
+		content="Sarita karale is a frontend developer working with angular, ReactJS and Ionic to build awesome enterprise grade web apps."
+	/>
+	<meta property="og:image" content="/preview.png" />
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://sarita.vercel.app/" />
+	<meta property="twitter:title" content="Sarita Karale | Portfolio" />
+	<meta
+		property="twitter:description"
+		content="Sarita karale is a frontend developer working with angular, ReactJS and Ionic to build awesome enterprise grade web apps."
+	/>
+	<meta property="twitter:image" content="/preview.png" />
+</svelte:head>
+
 <section class="text-gray-600 body-font w-screen mx-auto max-w-7xl ">
 	<div class="w-full m-0 flex px-5 py-24 justify-center md:flex-row flex-col items-center" id="top">
 		<div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
@@ -386,19 +416,20 @@
 								Accept: 'application/json'
 							},
 							body: JSON.stringify({
-								'_subject':'sarita\'s portfolio\'s contact form',
-								'_cc':'dhirajraje113@gmail.com',
-								'_autoresponse':"Thanks for reaching out to sarita, she'll get back to you as soon as possible",
-								'_template':'table',
-								'name': name,
-								'email':email,
-								'message': message,
+								_subject: "sarita's portfolio's contact form",
+								_cc: 'dhirajraje113@gmail.com',
+								_autoresponse:
+									"Thanks for reaching out to sarita, she'll get back to you as soon as possible",
+								_template: 'table',
+								name: name,
+								email: email,
+								message: message
 							})
-						}).then((data)=>{
-							name='';
-							email='';
-							message='';
-							alert('Successfully sent.')
+						}).then((data) => {
+							name = '';
+							email = '';
+							message = '';
+							alert('Successfully sent.');
 						});
 					}}>Send message</button
 				>
