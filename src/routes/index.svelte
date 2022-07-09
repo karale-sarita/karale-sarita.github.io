@@ -59,7 +59,7 @@
 				A passionate computer engineer and software developer, interested in frontend technologies.
 				Looking forward to work with great people and build cool stuff for the world.
 			</p>
-			<div class="flex w-full gap-4 py-6 px-2">
+			<div class="flex w-full gap-4 py-6 px-2 justify-center lg:justify-start">
 				<a
 					href="tel:+919130764955"
 					class="p-2 rounded-full shadow-md text-indigo-700 hover:shadow-lg hover:bg-indigo-700 hover:text-white hover:shadow-indigo-500 transition-all duration-200 cursor-pointer"
@@ -142,7 +142,7 @@
 		</div>
 	</div>
 
-	<div class="w-full flex p-8 max-w-7xl justify-center">
+	<div class="w-full flex-col md:flex-row flex p-8 max-w-7xl justify-center">
 		<div class="p-4 md:w-1/3">
 			<div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
 				<div class="flex items-center mb-3">
